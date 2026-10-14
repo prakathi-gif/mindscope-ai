@@ -1,0 +1,209 @@
+{
+  "timestamp": "2026-10-14 06:48:42",
+  "dataset_sample_size": 240,
+  "optimization_sampler": "Tree-structured Parzen Estimator (TPE)",
+  "logistic_regression_study": {
+    "model": "TF-IDF + Logistic Regression",
+    "best_score": 0.6313951399477715,
+    "best_params": {
+      "C": 0.36374585440139057,
+      "max_features": 3000,
+      "use_bigrams": true
+    },
+    "n_trials": 3,
+    "trials": [
+      {
+        "trial_id": 0,
+        "params": {
+          "C": 0.36374585440139057,
+          "max_features": 3000,
+          "use_bigrams": true
+        },
+        "value": 0.6313951399477715,
+        "state": "TrialState.COMPLETE"
+      },
+      {
+        "trial_id": 1,
+        "params": {
+          "C": 4.921157869251303,
+          "max_features": 12000,
+          "use_bigrams": true
+        },
+        "value": 0.6229235225558756,
+        "state": "TrialState.COMPLETE"
+      },
+      {
+        "trial_id": 2,
+        "params": {
+          "C": 0.1310251627548128,
+          "max_features": 8000,
+          "use_bigrams": false
+        },
+        "value": 0.6138355452596939,
+        "state": "TrialState.COMPLETE"
+      }
+    ]
+  },
+  "xgboost_study": {
+    "model": "TF-IDF + XGBoost",
+    "best_score": 0.6122564935064935,
+    "best_params": {
+      "n_estimators": 180,
+      "max_depth": 4,
+      "learning_rate": 0.03272447970178924,
+      "subsample": 0.6,
+      "colsample_bytree": 0.7,
+      "reg_lambda": 0.7790143126276238
+    },
+    "n_trials": 3,
+    "trials": [
+      {
+        "trial_id": 0,
+        "params": {
+          "n_estimators": 100,
+          "max_depth": 9,
+          "learning_rate": 0.14518497439122724,
+          "subsample": 0.8,
+          "colsample_bytree": 0.6,
+          "reg_lambda": 0.18408992080552522
+        },
+        "value": 0.529434046345811,
+        "state": "TrialState.COMPLETE"
+      },
+      {
+        "trial_id": 1,
+        "params": {
+          "n_estimators": 40,
+          "max_depth": 9,
+          "learning_rate": 0.10185822566867639,
+          "subsample": 0.9,
+          "colsample_bytree": 0.6,
+          "reg_lambda": 4.44475416669081
+        },
+        "value": 0.565451758386541,
+        "state": "TrialState.COMPLETE"
+      },
+      {
+        "trial_id": 2,
+        "params": {
+          "n_estimators": 180,
+          "max_depth": 4,
+          "learning_rate": 0.03272447970178924,
+          "subsample": 0.6,
+          "colsample_bytree": 0.7,
+          "reg_lambda": 0.7790143126276238
+        },
+        "value": 0.6122564935064935,
+        "state": "TrialState.COMPLETE"
+      }
+    ]
+  },
+  "ensemble_alpha_study": {
+    "model": "Hybrid Late-Fusion Ensemble",
+    "best_score_log_loss": 0.24745776076827822,
+    "optimal_alpha": 0.9906984063754939,
+    "n_trials": 20,
+    "trials": [
+      {
+        "trial_id": 0,
+        "alpha": 0.3745401188473625,
+        "log_loss": 0.3104208165843817
+      },
+      {
+        "trial_id": 1,
+        "alpha": 0.9507143064099162,
+        "log_loss": 0.2513652123121484
+      },
+      {
+        "trial_id": 2,
+        "alpha": 0.7319939418114051,
+        "log_loss": 0.2731595387208224
+      },
+      {
+        "trial_id": 3,
+        "alpha": 0.5986584841970366,
+        "log_loss": 0.2868100475913979
+      },
+      {
+        "trial_id": 4,
+        "alpha": 0.15601864044243652,
+        "log_loss": 0.33430749093188233
+      },
+      {
+        "trial_id": 5,
+        "alpha": 0.15599452033620265,
+        "log_loss": 0.3343101775188105
+      },
+      {
+        "trial_id": 6,
+        "alpha": 0.05808361216819946,
+        "log_loss": 0.34531090568790823
+      },
+      {
+        "trial_id": 7,
+        "alpha": 0.8661761457749352,
+        "log_loss": 0.25970364383081224
+      },
+      {
+        "trial_id": 8,
+        "alpha": 0.6011150117432088,
+        "log_loss": 0.2865559557936464
+      },
+      {
+        "trial_id": 9,
+        "alpha": 0.7080725777960455,
+        "log_loss": 0.2755876483611838
+      },
+      {
+        "trial_id": 10,
+        "alpha": 0.9703294619917746,
+        "log_loss": 0.2494454323819312
+      },
+      {
+        "trial_id": 11,
+        "alpha": 0.9588266146737304,
+        "log_loss": 0.2505705657798192
+      },
+      {
+        "trial_id": 12,
+        "alpha": 0.9803570892649057,
+        "log_loss": 0.2484661553734878
+      },
+      {
+        "trial_id": 13,
+        "alpha": 0.8248131100828667,
+        "log_loss": 0.26382226002640835
+      },
+      {
+        "trial_id": 14,
+        "alpha": 0.9906984063754939,
+        "log_loss": 0.24745776076827822
+      },
+      {
+        "trial_id": 15,
+        "alpha": 0.8096850466813962,
+        "log_loss": 0.2653350614970235
+      },
+      {
+        "trial_id": 16,
+        "alpha": 0.9879479992550958,
+        "log_loss": 0.2477258063243675
+      },
+      {
+        "trial_id": 17,
+        "alpha": 0.6038177056633125,
+        "log_loss": 0.28627651617422434
+      },
+      {
+        "trial_id": 18,
+        "alpha": 0.7312611431104268,
+        "log_loss": 0.27323378706456297
+      },
+      {
+        "trial_id": 19,
+        "alpha": 0.8598548105591705,
+        "log_loss": 0.26033140833019414
+      }
+    ]
+  }
+}

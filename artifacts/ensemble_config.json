@@ -1,0 +1,9 @@
+{
+  "optimal_alpha": 0.04,
+  "current_alpha": 0.04,
+  "validation_tuning": {
+    "metric": "log_loss",
+    "best_validation_score": 1.0563626949449645,
+    "optimal_alpha": 0.04
+  }
+}
